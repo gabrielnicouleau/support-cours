@@ -1,0 +1,153 @@
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop
+$ mkdir gitrepository1
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop
+$ mkdir gitrepository1/js gitrepository1/css
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop
+$ cd gitrepository1/
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/gitrepository1
+$ touch index.html
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/gitrepository1
+$ git init
+Initialized empty Git repository in C:/Users/Gabriel/Desktop/gitrepository1/.git/
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/gitrepository1 (master)
+$ git add index.html
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/gitrepository1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/gitrepository1 (master)
+$ git commit -m 'ajout fichier index.html'
+[master (root-commit) dc6c1a2] ajout fichier index.html
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/gitrepository1 (master)
+$ git log
+commit dc6c1a23e4b6dcf8fbc5351e97024649d1062a17 (HEAD -> master)
+Author: gabrielnicouleau <nicouleau_gabriel@yahoo.fr>
+Date:   Fri Jul 5 10:09:03 2024 +0200
+
+    ajout fichier index.html
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/gitrepository1 (master)
+$ touch js/script.js css/main.css
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/gitrepository1 (master)
+$ git add js/script.js css/main.css
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/gitrepository1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   css/main.css
+        new file:   js/script.js
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/gitrepository1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   css/main.css
+        new file:   js/script.js
+
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/gitrepository1 (master)
+$ git commit -m 'ajout fichier script.js et main.css'
+[master 2a0ed48] ajout fichier script.js et main.css
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 css/main.css
+ create mode 100644 js/script.js
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/gitrepository1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/gitrepository1 (master)
+$ echo '<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Mon profil</title>
+</head>
+<body>
+    <h1>Bienvenue sur mon super site</h1>
+</body>
+</html>'>index.html
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/gitrepository1 (master)
+$ git add index.html
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/gitrepository1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/gitrepository1 (master)
+$ git commit -m 'modification du fichier index.html'
+[master 4861242] modification du fichier index.html
+ 1 file changed, 13 insertions(+)
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/gitrepository1 (master)
+$ touch page.html
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/gitrepository1 (master)
+$ git add page.html
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/gitrepository1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   page.html
+
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/gitrepository1 (master)
+$ git commit -m 'ajout du fichier page.html'
+[master 64d8389] ajout du fichier page.html
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 page.html
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/gitrepository1 (master)
+$ git log
+commit 64d838963c66ce1e4598c2670c692f458344f943 (HEAD -> master)
+Author: gabrielnicouleau <nicouleau_gabriel@yahoo.fr>
+Date:   Fri Jul 5 10:21:13 2024 +0200
+
+    ajout du fichier page.html
+
+commit 4861242cb03a988adaee97cf47aaada84de4fa74
+Author: gabrielnicouleau <nicouleau_gabriel@yahoo.fr>
+Date:   Fri Jul 5 10:19:11 2024 +0200
+
+    modification du fichier index.html
+
+commit 2a0ed4883069aee1e918ab0632332aaa0f2fc074
+Author: gabrielnicouleau <nicouleau_gabriel@yahoo.fr>
+Date:   Fri Jul 5 10:14:52 2024 +0200
+
+    ajout fichier script.js et main.css
+
+commit dc6c1a23e4b6dcf8fbc5351e97024649d1062a17
+Author: gabrielnicouleau <nicouleau_gabriel@yahoo.fr>
+Date:   Fri Jul 5 10:09:03 2024 +0200
+
+    ajout fichier index.html

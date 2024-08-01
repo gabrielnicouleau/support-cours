@@ -1,0 +1,24 @@
+Outils utiles pour la rédaction d'un CdC :
+
+Création de Personna :
+https://www.hubspot.fr/make-my-persona
+https://www.adobe.com/fr/express/create/user-persona
+
+Diagramme de Gant :
+https://www.ganttproject.biz/
+https://elegantt.com/
+https://www.vertex42.com/ExcelTemplates/simple-gantt-chart.html
+
+Outils graphique :
+https://www.figma.com/
+https://www.canva.com/
+https://www.photopea.com/
+
+Arborescence :
+https://www.gloomaps.com/
+
+Génération de Photo de Personne :
+https://thispersondoesnotexist.com/
+
+Création de Nuancier de Couleur :
+https://color.adobe.com/fr/create/color-wheel

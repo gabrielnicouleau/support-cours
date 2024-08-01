@@ -1,0 +1,122 @@
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop
+$ mkdir exoremise1
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/exoremise1
+$ touch ex1.txt ex2.txt ex3.txt
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/exoremise1
+$ git init
+Initialized empty Git repository in C:/Users/Gabriel/Desktop/exoremise1/.git/
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/exoremise1
+$ touch ex1.txt ex2.txt ex3.txt
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/exoremise1 (master)
+$ git add .
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/exoremise1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   ex1.txt
+        new file:   ex2.txt
+        new file:   ex3.txt
+
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/exoremise1 (master)
+$ git commit -m 'ajout fichier ex1 ex2 et ex3'
+[master (root-commit) 3b634a6] ajout fichier ex1 ex2 et ex3
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 ex1.txt
+ create mode 100644 ex2.txt
+ create mode 100644 ex3.txt
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/exoremise1 (master)
+$ git branch feature
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/exoremise1 (master)
+$ touch fich1.txt fich2.txt fich3.txt
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/exoremise1 (master)
+$ git add fich1.txt fich2.txt fich3.txt
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/exoremise1 (master)
+$ git stash -m 'remise fich1-3.txt'
+Saved working directory and index state On master: remise fich1-3.txt
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/exoremise1 (master)
+$ git checkout feature
+Switched to branch 'feature'
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/exoremise1 (feature)
+$ touch page.html css.txt line.pjg
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/exoremise1 (feature)
+$ git add css.txt line.pjg page.html
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/exoremise1 (feature)
+$ git commit -m 'ajout css.txt line.pjg page.html'
+[feature 9c0e30a] ajout css.txt line.pjg page.html
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 css.txt
+ create mode 100644 line.pjg
+ create mode 100644 page.html
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/exoremise1 (feature)
+$ git stash apply
+On branch feature
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   fich1.txt
+        new file:   fich2.txt
+        new file:   fich3.txt
+
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/exoremise1 (feature)
+$ git commit -m ' ajout fich1.txt fich2.txt fich3.txt'
+[feature 4c210fd]  ajout fich1.txt fich2.txt fich3.txt
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 fich1.txt
+ create mode 100644 fich2.txt
+ create mode 100644 fich3.txt
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/exoremise1 (feature)
+$ git checkout master
+Switched to branch 'master'
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/exoremise1 (master)
+$ git stash apply
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   fich1.txt
+        new file:   fich2.txt
+        new file:   fich3.txt
+
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/exoremise1 (master)
+$ git commit -m ' ajout fich1.txt fich2.txt fich3.txt'
+[master 60d4810]  ajout fich1.txt fich2.txt fich3.txt
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 fich1.txt
+ create mode 100644 fich2.txt
+ create mode 100644 fich3.txt
+
+Gabriel@DESKTOP-VMHSCTI MINGW64 ~/Desktop/exoremise1 (master)
+$ git log
+commit 60d48101d5b06bae2b80bce97588205ebdbde05c (HEAD -> master)
+Author: gabrielnicouleau <nicouleau_gabriel@yahoo.fr>
+Date:   Tue Jul 9 12:24:03 2024 +0200
+
+     ajout fich1.txt fich2.txt fich3.txt
+
+commit 3b634a6f3c61855fa3e19d5414e701016394a30d
+Author: gabrielnicouleau <nicouleau_gabriel@yahoo.fr>
+Date:   Tue Jul 9 12:05:44 2024 +0200
+
+    ajout fichier ex1 ex2 et ex3
+

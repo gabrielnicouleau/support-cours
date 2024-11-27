@@ -48,7 +48,7 @@ WHERE t.date_creation >= '2024-01-01'
 GROUP BY p.id_produit;
 
 -- Afficher la liste des produits vendu par le vendeur : 4 (nom_produit, tarif, nom_vendeur, prenom_vendeur)
-SELECT p.nom_produit, p.tarif, v.nom_vendeur, v.prenom_vendeur FROM produit AS p
+SELECT p.nom_produit, p.tarif, v.nom_vendeur, v.prenom_vendeur AS cnt FROM produit AS p 
 INNER JOIN produit_ticket AS pt ON pt.id_produit = p.id_produit
 INNER JOIN ticket AS t ON t.id_ticket = pt.id_ticket
 INNER JOIN vendeur AS v ON v.id_vendeur = t.id_vendeur

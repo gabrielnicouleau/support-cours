@@ -44,7 +44,7 @@ INSERT INTO ticket(date_creation,id_vendeur)  VALUES
 ('2024-12-22',5);
 
 -- Assigner 3 produits à chaque tickets
-INSERT INTO produit_ticket(id_ticket, id_produit, quantite) VALUES
+INSERT INTO produit_ticket(id_ticket,id_produit,quantite) VALUES
 (1,1,5),(1,2,3),(1,5,8),
 (2,1,2),(2,9,3),(2,6,12),
 (3,5,3),(3,7,10),(3,6,14),

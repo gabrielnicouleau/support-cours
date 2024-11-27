@@ -40,9 +40,9 @@ ON DELETE CASCADE ON UPDATE CASCADE;
 ALTER TABLE judoka_competition
 ADD CONSTRAINT fk_participer_judoka
 FOREIGN KEY (id_judoka)
-REFERENCES judoka(id_judoka);
+REFERENCES judoka(id_judoka); -- peux ajouter ON UPDATE CASCADE (correction)
 
 ALTER TABLE judoka_competition
 ADD CONSTRAINT fk_concourir_competition
 FOREIGN KEY (id_cpt)
-REFERENCES competition(id_cpt);
+REFERENCES competition(id_cpt); -- peux ajouter ON UPDATE CASCADE (correction)

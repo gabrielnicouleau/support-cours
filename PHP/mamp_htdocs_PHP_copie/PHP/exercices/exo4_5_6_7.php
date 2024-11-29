@@ -13,7 +13,7 @@ echo "</br>";
 
 //exo 5: Créer une fonction qui prend en entrée un nombre à virgule (float), la fonction doit renvoyer l’arrondi (return) du nombre en entrée.
 function arrondir ($nombre){
-    return round($nombre);
+    return round($nombre); // ou floor (arrondi inférieur) ou seil (arrondi supérieur)
 }
 $arrondi = arrondir(7.98765);
 echo $arrondi;

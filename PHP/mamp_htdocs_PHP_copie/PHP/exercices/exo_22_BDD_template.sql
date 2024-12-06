@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS articles CHARSET utf8mb4;
+USE articles;
+
+CREATE TABLE IF NOT EXISTS article(
+id_article INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+nom_article VARCHAR(50) NOT NULL UNIQUE,
+description_article VARCHAR(255) NOT NULL,
+prix_article DECIMAL(6,2)
+)Engine=InnoDB;

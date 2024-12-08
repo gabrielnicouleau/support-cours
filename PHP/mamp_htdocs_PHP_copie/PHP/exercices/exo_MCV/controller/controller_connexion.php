@@ -18,7 +18,7 @@ if(isset($_POST["submitConnexion"])){
                     $_SESSION['name'] = $result['name_user'];
                     $_SESSION['firstname'] = $result['firstname_user'];
                     $_SESSION['email'] = $result['email_user'];
-                    header('location:controller_compte_utilisateur.php');
+                    header('Location:controller_compte_utilisateur.php');
                     exit;
                 } else {
                     $message = "Login et/ou Mot de passe incorrect";

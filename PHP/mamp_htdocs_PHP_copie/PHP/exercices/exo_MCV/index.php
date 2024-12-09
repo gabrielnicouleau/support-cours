@@ -1,9 +1,12 @@
 <?php
 //controller de ma page principale
 
+// On lance la session pour qu'elle soit prise en compte si l'utilisateur est connecté
+session_start();
+
 // include de functions.php et model_acceuil.php
-include '../utils/functions.php';
-include '../model/model_user.php';
+include './utils/functions.php';
+include './model/model_user.php';
 
 // creation des variables utilisées dans ce fichier
 $message = "";
@@ -72,8 +75,8 @@ $bdd = connect();
 $listeUsers = listeUsers($bdd);
 
 // include des fichiers view utilisés
-include '../view/header_view_acceuil.php';
-include '../view/main_view_acceuil.php';
-include '../view/footer_view_acceuil.php';
+include './controller_header.php';
+include './view/main_view_acceuil.php';
+include './view/footer_view_acceuil.php';
 
 ?>

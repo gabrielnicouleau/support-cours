@@ -1,4 +1,4 @@
 <section>
-    <h2>Compte Utilisateur</h2>
-    <p> <?php echo $message; ?></p>
+    <h1>Mon compte</h1>
+    <p> <?php echo $compteUtilisateur; ?></p>
 </section>

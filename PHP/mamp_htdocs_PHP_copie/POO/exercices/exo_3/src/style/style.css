@@ -1,0 +1,38 @@
+/*Reset CSS*/
+*{
+    margin :0;
+    padding:0;
+}
+
+header, footer{
+    min-height:15vh;
+    background-color: #333;
+    padding:1rem 4rem;
+}
+
+header h1{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main{
+    display: flex;
+    min-height: 70vh;
+    padding:1rem 4rem;
+}
+
+section {
+    padding: 1rem;
+}
+
+main h1{
+    margin-bottom: 1rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+form input{
+    margin-bottom: 0.5rem;
+}

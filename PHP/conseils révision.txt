@@ -1,0 +1,67 @@
+Quelques Conseils de Révision
+PROGRAMME DE SOUTIEN PHP
+
+METHODOLOGIE :
+Pour un même concept, suivre les étapes dans l'ordre. On ne passe pas à l'étape suivante tant que l'étape actuelle n'a pas été réussi
+Se donner un temps limité pour être le plus efficace et aller à l'essentiel
+Ne pas oublier de se reposer et surtout de reposer son cerveau
+Être régulier
+Revenir régulièrement sur des notions revues pour renforcer l'ancrage dans le cerveau
+Découper une tâche en tâches plus petites (comme si on faisait une recette de cuisine)
+Planifier à l'avance les sessions de révision : horaire, durée, tâche à faire (pour ne plus avoir à y réfléchir)
+
+Tester soi-même les exemples et démos du cours
+Faire des tests et manipuler le code soi-même
+Reprendre les exercices en s'aidant du corriger
+Reprendre les exercices en ne s'aidant que des commentaires du corriger
+Reprendre les exercices sans aucune aide
+Faire de nouveaux exercices trouvés sur des sites ou en demandant à une IA d'en générer (en lui précisant bien le thème à travailler lors du prompt)
+Appliquer ce qui a été compris sur un projet (exemple de base : créer une TODO-List)
+
+-----------------------------------------------------------------------------------------------
+RESSOURCES D'ENTRAINNEMENT :
+le site exercism.org : https://exercism.org/
+conseil sur la méthodologie d'apprentissage :
+
+        + La Cervelle : https://www.youtube.com/@la.cervelle
+
+    + Mieux Apprendre (par ScienceEtonnante) : https://www.youtube.com/watch?v=RVB3PBPxMWg
+le site Coding Game pour travailler l'algo et les tests techniques des entreprises : https://www.codingame.com/home
+
+----------------------------------------------------------------------------------------------- 
+PHP : les principes de base à maîtriser
+l'Algo de base :
+Variable
+Type de valeur
+Fonction : définition, paramètre, return, porté
+Condition : if...else if… else, switch
+Opérateur de comparaison et Opérateur Logique
+Tableau : indexé et associatif
+Boucle : for, while, foreach
+Traiter des Tableaux contenant des Tableaux
+Traitement des formulaires ($_GET, $_POST)
+Sécurisation de base des données Client (Vérifier les champs vides, vérifier les formats, nettoyage de donné, hashage de données sensible comme les mots de passe)
+Communication avec une BDD : objet PDO, requête préparée, binding de paramètre, récupération avec fetch et fetchAll
+Gestion des erreurs avec Try...Catch
+Structure de code Model-View-Controller
+Les Sessions
+Les Classes et les objets : définition, attributs, constructeur, méthode, $this, création des objets, utilisation des objets
+Encapsulation : public, private, protected, Getter et Setter
+Typage des données
+Signature d'une méthode
+Héritage
+Polymorphisme
+
+
+PHP : Les Bonus à voir
+
+les bonnes pratiques
+les namespaces
+le fichier env.php et la super-global $_ENV
+Le Buffer : ob_start(), ob_get_clean()
+Le Routeur : fichier .htaccess
+la super-global $_FILES
+Les syntaxes alternatives
+
+
++ lien youtube en fil révision sur le discord

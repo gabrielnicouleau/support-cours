@@ -1,0 +1,17 @@
+# Activation du rewrite des URL
+RewriteEngine On
+# base du projet (emplacement à partir de la racine du serveur)
+RewriteBase /api
+# si ce n'est pas un répertoire
+RewriteCond %{REQUEST_FILENAME} !-d
+# Si ce n'est pas un fichier
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)$ index.php [QSA,L]
+<Files "*.md">
+order deny,allow
+deny from all
+</Files>
+<Files "*.txt">
+order deny,allow
+deny from all
+</Files>

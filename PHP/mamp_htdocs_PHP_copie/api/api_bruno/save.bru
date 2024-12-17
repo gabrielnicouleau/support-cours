@@ -1,0 +1,17 @@
+meta {
+  name: save
+  type: http
+  seq: 2
+}
+
+get {
+  url: localhost/api/user
+  body: json
+  auth: none
+}
+
+tests {
+  {
+    "cle":"valeur"
+  }
+}
